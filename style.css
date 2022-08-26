@@ -1,0 +1,8 @@
+.thumbnail_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.thumbnail{
+    width: 100%;
+}
