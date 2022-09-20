@@ -4,6 +4,7 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
+<script src="script.js"></script>
 
 <body>
     <div id="top">
@@ -21,16 +22,19 @@
             <img class="circle_pic" src="image/profile.JPG" width="50px" />
         </div>
         <div id="profile_info">
-            <div id="id">su_lim <i class="fa-solid fa-gear"></i></div>
+            <div id="id">
+                <span>su_lim</span>
+                <i class="fa-solid fa-gear"></i>
+            </div>
             <button>프로필 편집</button>
         </div>
     </div>
     <div>
         <p>
-            <strong>임수정 (Sujung Lim) </strong><br />
-            자유로운 영혼
+            <strong id="userInfo">임수정 (Sujung Lim) </strong><br />
+            <span id="summary">자유로운 영혼</span>
         </p>
-        <p>
+        <p id="profileDetail">
             <a href="https://sujung-lim.github.io"> sujuang-lim.github.io </a>
         </p>
     </div>
@@ -87,6 +91,8 @@
             <img src="image/thumbnails/thumbnail3.JPG" class="thumbnail" />
         </div>
     </div>
+
+  
 </body>
 
 </html>
