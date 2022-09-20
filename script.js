@@ -46,5 +46,23 @@ document.addEventListener("DOMContentLoaded",
                     e.target.textContent = "프로필 편집 완료"
                     changing = true
                 }
+
+             })//프로필 사진 변경에 <input type="file"태그 활용하려 하였으나
+             //브라우저 보안 정책에 어긋나는 일이기에 난이도가 높아지므로 
+             //대신 프롬프트 창으로 이미지 경로 받아와 이미지 교체하기 
+                    let profile_pic = document.querySelector("#profile_pic .circle_pic")
+                    profile_pic.addEventListener("mouseover",
+                        function(e){
+                            e.target.style.filter = "grayscale(50%)"
+                        })
+    
+                    profile_pic.addEventListener("mouseleave",
+                        function(e){
+                            e.target.style.filter = "grayscale(0%)"
+                        })
+    
+                    profile_pic.addEventListener("click",
+                        function(e){
+                            profile_pic.setAttribute("src", prompt("이미지 url을 입력해 주세요!"))
             })
     })
